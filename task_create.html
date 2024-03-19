@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,12 +18,21 @@
 		</div>
 
 		<form action="" method="post">
-			<input type="submit" value="Отправить" class="send" name="send"/>
-			<input type="text" name="pname" class="field have-left-content" placeholder="Ваше имя"/>
-			<input type="email" name="pemail" class="field have-left-content" placeholder="Ваша почта"/>
-			<input type="text" name="subject" class="field have-left-empty" placeholder="Тема сообщения"/>
+			<input type="submit" value="Отправить" class="send" name="send" id="create_task"/>
+			<input type="text" name="pname" class="field have-left-content" placeholder="Ваше имя" id="user_name"/>
+			<input type="email" name="pemail" class="field have-left-content" placeholder="Телефон для связи"/>
+			<input type="text" name="subject" class="field have-left-empty" placeholder="Тема"/>
 			<textarea placeholder="Текст сообщения"></textarea>
 		</form>
+
+		<script>
+			let tg = window.Telegram.WebApp;
+			let b_create_task = document.getElementById("create_task");
+			document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
+			b_create_task.addEventListener("click", () => {
+				tg.close();
+			});
+		</script>
 
 	</div>
 </body>
