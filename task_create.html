@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,68 +16,20 @@
 			<span class="about-feedback about-border">Форма создания заявки. Заполните все поля и нажмите отправить</span>
 		</div>
 
-		<form action="" method="post">
-			<input type="submit" value="Отправить" class="send" name="send" id="create_task"/>
-			<input type="text" name="pname" class="field have-left-content" placeholder="Ваше имя" id="user_name"/>
-			<input type="text" name="pphone_number" class="field have-left-content" placeholder="Телефон для связи" id="user_phone"/>
-			<input type="text" name="subject" class="field have-left-empty" placeholder="Тема задачи" id="task_topic"/>
+		<div class="task_create_form" id="task_create_form">
+			<button class="send" id="create_task"/>Отправить</button>
+			<input type="text" class="field have-left-content" placeholder="Ваше имя" id="user_name"/>
+			<input type="text" class="field have-left-content" placeholder="Телефон для связи" id="user_phone"/>
+			<input type="text" class="field have-left-empty" placeholder="Тема задачи" id="task_topic"/>
 			<textarea placeholder="Постановка задачи" id="task_text"></textarea>
-		</form>
+		</div>
 
 		<div class="element-feedback element-border" id="error_field">
 			<img src="./img/attention-pink.png" class="imgs-feedback picture-border" alt="">
 			<span class="about-feedback about-border" id="error_msg"></span>
 		</div>
 	</div>
-
-	<script>
-
-		let tg = window.Telegram.WebApp;
-		let b_create_task = document.getElementById("create_task");
-		let error_text = document.getElementById("error_msg");
-
-		tg.expand();
-
-		document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
-
-		b_create_task.addEventListener("click", () => {
-
-			let usr_id = tg.initDataUnsafe.user.id;
-			let usr_name = document.getElementById("user_name").value;
-			let usr_phone = document.getElementById("user_phone").value;
-			let tsk_topic = document.getElementById("task_topic").value;
-			let tsk_text = document.getElementById("task_text").value;
-
-			if (usr_name.length < 1) {
-				error_text.innerText = 'Не заполнено поле: Имя';
-				return;
-			}
-			if (usr_phone.length < 1) {
-				error_text.innerText = "Не заполнено поле: Телефон для связи";
-				return;
-			}
-			if (tsk_topic.length < 1) {
-				error_text.innerText = "Не заполнено поле: Тема задачи";
-				return;
-			}
-			if (tsk_text.length < 1) {
-				error_text.innerText = "Не заполнено поле: Постановка задачи";
-				return;
-			}
-
-			let data = {
-				usr_id: usr_id,
-				usr_name: usr_name,
-				usr_phone: usr_phone,
-				tsk_topic: tsk_topic,
-				tsk_text: tsk_text
-			}
-
-			tg.sendData(JSON.stringify(data));
-			tg.close();
-		});
-
-	</script>
-
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="web_app.js"></script>
 </body>
 </html>

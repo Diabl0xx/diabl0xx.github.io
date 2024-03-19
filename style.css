@@ -72,7 +72,7 @@ a:hover { color: #ff994f; }
 	text-align:justify;
 }
 
-form input.send {
+.task_create_form button.send {
 	float:left;
 	height: 60px;
 	width: 100px;
@@ -87,9 +87,9 @@ form input.send {
 	cursor: pointer;
 }
 
-form input.send:hover {	background-color: #6587e8;}
+.task_create_form button.send:hover {	background-color: #6587e8;}
 
-form input.field {
+.task_create_form input.field {
 	height: 25px;
 	float:left;
 	clear:right;
@@ -103,10 +103,10 @@ form input.field {
 	margin-bottom: 10px;
 }
 
-form input.have-left-content { width: -webkit-calc(100% - 111px); }
-form input.have-left-empty {width: 100%;}
+.task_create_form input.have-left-content { width: -webkit-calc(100% - 111px); }
+.task_create_form input.have-left-empty {width: 100%;}
 
-form textarea {
+.task_create_form textarea {
 	float:left;
 	width: 100%;
 	height: 300px;
@@ -123,11 +123,11 @@ form textarea {
 }
 
 
-form textarea:focus { border: 2px solid #ff994f; }
-form input.field:focus {border: 2px solid #ff994f; }
+.task_create_form textarea:focus { border: 2px solid #ff994f; }
+.task_create_form input.field:focus {border: 2px solid #ff994f; }
 
-form textarea::placeholder { color: #c7c7c7; text-indent: 1em; font-size: 1em;}
-form input::placeholder { color: #C7C7C7; text-indent: 8px;}
+.task_create_form textarea::placeholder { color: #c7c7c7; text-indent: 1em; font-size: 1em;}
+.task_create_form input::placeholder { color: #C7C7C7; text-indent: 8px;}
 
 .element-feedback {
 	display: grid;
@@ -145,7 +145,7 @@ form input::placeholder { color: #C7C7C7; text-indent: 8px;}
 }
 
 @media(min-width: 1024px) {
-	form {
+	.task_create_form {
 		width: 40%;
 		margin-top: 30px;
 		margin-left: 30%;
@@ -158,7 +158,7 @@ form input::placeholder { color: #C7C7C7; text-indent: 8px;}
 }
 
 @media(max-width: 1023px) {
-	form {
+	.task_create_form {
 		margin: 8px 20px;
 		width: -webkit-calc(100%-41px);
 	}
