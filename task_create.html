@@ -8,9 +8,21 @@
     <title>Котобот web_app</title>
 </head>
 <body>
-    <div id="Main">
-        <h1>Создание задачи</h1>
-        <button id="create_task">Создать</button>
-    </div>
+    <div class="content main-side-border">
+
+		<div class="element-feedback element-border">
+			<img src="./img/attention-green.png" class="imgs-feedback picture-border" alt="">
+			<span class="about-feedback about-border">Форма создания заявки</span>
+		</div>
+
+		<form action="" method="post">
+			<input type="submit" value="Отправить" class="send" name="send"/>
+			<input type="text" name="pname" class="field have-left-content" placeholder="Ваше имя"/>
+			<input type="email" name="pemail" class="field have-left-content" placeholder="Ваша почта"/>
+			<input type="text" name="subject" class="field have-left-empty" placeholder="Тема сообщения"/>
+			<textarea placeholder="Текст сообщения"></textarea>
+		</form>
+
+	</div>
 </body>
 </html>
