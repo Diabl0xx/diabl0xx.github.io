@@ -323,5 +323,9 @@ a:hover { color: #ff994f; }
 	border-bottom: 2px solid #ff994f;
 	border-left:1px solid #ff994f;*/
 }
+
+.red-text {
+    color: #ff0000;
+}
 /*/\/\/\ End Borders /\/\/\*/
 
