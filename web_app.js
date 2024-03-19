@@ -1,7 +1,7 @@
 let error_text = document.getElementById("error_msg");
 let tg = window.Telegram.WebApp;
 tg.expand();
-
+error_text.innerText = tg.initData;
 let b_create_task = document.getElementById("create_task");
 
 function checkField(ifield, fname) {

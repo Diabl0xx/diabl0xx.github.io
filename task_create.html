@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="content main-side-border">
+
+	<div class="content main-side-border">
 
 		<div class="element-feedback element-border">
 			<img src="./img/attention-green.png" class="imgs-feedback picture-border" alt="">
@@ -22,14 +23,13 @@
 			<input type="text" class="field have-left-content" placeholder="Телефон для связи" id="user_phone"/>
 			<input type="text" class="field have-left-empty" placeholder="Тема задачи" id="task_topic"/>
 			<textarea placeholder="Постановка задачи" id="task_text"></textarea>
-
-
-		<div class="task_create_form element-border" id="error_field">
-			<span class="error-border" id="error_msg"></span>
+			<div id="error_msg"></div>
 		</div>
 
 	</div>
+
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="web_app.js"></script>
+
 </body>
 </html>
