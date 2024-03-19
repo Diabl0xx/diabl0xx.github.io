@@ -134,13 +134,28 @@ a:hover { color: #ff994f; }
 	grid-template-columns: max-content auto;
 }
 
+.element-error {
+    display: grid;
+	grid-template-columns: max-content auto;
+}
+
+
 .imgs-feedback { height: 75px; }
+.imgs-error { height: 30px; }
 
 .about-feedback {
 	padding: 12px 8px 4px 8px;
 	text-align: justify;
 	text-indent: 24px;
 	height: 59px;
+	overflow: hidden;
+}
+
+.text-error {
+	text-align: justify;
+	text-indent: 24px;
+	height: 30px;
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -155,6 +170,11 @@ a:hover { color: #ff994f; }
 		margin: 8px 30%;
 		width: 40%;
 	}
+
+	.element-error {
+		margin: 8px 30%;
+		width: 40%;
+	}
 }
 
 @media(max-width: 1023px) {
@@ -166,7 +186,12 @@ a:hover { color: #ff994f; }
 		margin: 20px 20px;
 		width: -webkit-calc(100%-41px);
 	}
-	
+
+	.element-error {
+		margin: 20px 20px;
+		width: -webkit-calc(100%-41px);
+	}
+
 	.about-feedback { font-size: 0.75em; }
 }
 
@@ -289,6 +314,14 @@ a:hover { color: #ff994f; }
 	border-right:2px solid #ff994f;
 	border-bottom: 2px solid #ff994f;
 	border-left:1px solid #ff994f;
+}
+
+.error-border {
+	/*border-radius: 10px 10px 10px 0px;
+	border-top: 2px solid #ff994f;
+	border-right:2px solid #ff994f;
+	border-bottom: 2px solid #ff994f;
+	border-left:1px solid #ff994f;*/
 }
 /*/\/\/\ End Borders /\/\/\*/
 
