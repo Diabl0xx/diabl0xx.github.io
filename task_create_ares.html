@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Котобот web_app</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+	<div class="content main-side-border">
+
+		<div class="element-feedback element-border">
+			<img src="./img/attention-green.png" class="imgs-feedback picture-border" alt="">
+			<span class="about-feedback about-border">Форма создания заявки. Заполните все поля и нажмите отправить</span>
+		</div>
+
+		<div class="task_create_form" id="task_create_form">
+			<button class="send" id="create_task"/>Отправить</button>
+			<input type="text" class="field have-left-content" placeholder="Тема задачи" id="task_topic"/>
+			<input type="text" class="field have-left-empty" placeholder="Телефон (если отличается от вашего)" id="phone_number" />
+			<input type="text" class="field have-left-empty" placeholder="Anydesk (если требуется)" id="anydesk_id" />
+			<textarea placeholder="Постановка задачи" id="task_text"></textarea>
+			<div class="red-text" id="error_msg"></div>
+		</div>
+
+	</div>
+
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="web_app_ares.js"></script>
+
+</body>
+</html>
