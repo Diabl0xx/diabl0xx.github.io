@@ -3,17 +3,16 @@ html, body { height: 100%; }
 
 body {
 	font-family: "Consolas", "Helvetica", "Arial", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 100%;
-	color: #FF6945;
+	color: #ffffff;
 	background-color: #7395f7;
-	font-weight: bold;
 	display: flex; /*Для прижатия футера*/
 	flex-direction: column; /*Для прижатия футера*/
 	
 }
 .content { flex-grow: 1;
-	background: url(img/group1c.png);
+	/*background: url(img/background-pink-half-transparency.png);*/
 } /*Для прижатия футера*/
 
 
@@ -78,28 +77,28 @@ a:hover { color: #ff994f; }
 	float:left;
 	height: 35px;
 	width: 100px;
-	background-color: #66FF66;
-	color: #FF6945;
+	background-color: #6a8ef6;
+	color: #ffffff;
 	border-radius: 8px;
-	border: 2px solid #FF6945;
+	border: 2px solid #ff994f;
 	margin-bottom: 5px;
 	margin-right: 10px;
-    font-size: 0.9em;
-    font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
 	cursor: pointer;
 }
 
-.task_create_form button.send:hover {	background-color: #00CC00;}
+.task_create_form button.send:hover {	background-color: #6587e8;}
 
 .task_create_form input.field {
 	height: 35px;
 	float:left;
 	clear:right;
 	box-sizing: border-box;
-	background-color: rgba(106, 142, 246, 0.7);
+	background-color: #6a8ef6;
 	color: #ffffff;
 	border-radius: 8px;
-	border: 2px solid #FF6945;
+	border: 2px solid #90FF00;
 	text-indent: 8px;
 	font-size: 1em;
 	margin-bottom: 10px;
@@ -113,23 +112,23 @@ a:hover { color: #ff994f; }
 	width: 100%;
 	height: 300px;
 	box-sizing: border-box;
-	background-color: rgba(106, 142, 246, 0.7);
+	background-color: #6a8ef6;
 	color: #ffffff;
 	border-radius: 8px;
-	border: 2px solid #FF6945;
+	border: 2px solid #90FF00;
 	text-indent: 1em; 
 	text-align:justify;
 	padding-top: 5px;
 	margin-bottom: 10px;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 
-.task_create_form textarea:focus { border: 2px solid #FF6945; }
-.task_create_form input.field:focus {border: 2px solid #FF6945; }
+.task_create_form textarea:focus { border: 2px solid #ff994f; }
+.task_create_form input.field:focus {border: 2px solid #ff994f; }
 
-.task_create_form textarea::placeholder { color: #FFFFFF; font-style: italic; text-indent: 1em;  }
-.task_create_form input::placeholder { color: #FFFFFF; font-style: italic; text-indent: 8px;  }
+.task_create_form textarea::placeholder { color: #c7c7c7; text-indent: 1em; font-size: 1em;}
+.task_create_form input::placeholder { color: #C7C7C7; text-indent: 8px;}
 
 .element-feedback {
 	display: grid;
@@ -164,7 +163,7 @@ a:hover { color: #ff994f; }
 @media(min-width: 1024px) {
 	.task_create_form {
 		width: 40%;
-		margin-top: 15px;
+		margin-top: 30px;
 		margin-left: 30%;
 	}
 	
@@ -307,7 +306,7 @@ a:hover { color: #ff994f; }
 	border-top: 2px solid;
 	border-left:2px solid;
 	border-bottom: 2px solid;
-	border-color: #FF6945;
+	border-color: #ff994f;
 }
 
 .about-border {
@@ -316,7 +315,6 @@ a:hover { color: #ff994f; }
 	border-right:2px solid #ff994f;
 	border-bottom: 2px solid #ff994f;
 	border-left:1px solid #ff994f;
-	border-color: #FF6945;
 }
 
 .error-border {
@@ -328,7 +326,7 @@ a:hover { color: #ff994f; }
 }
 
 .red-text {
-    color: #000000;
+    color: #ff0000;
 }
 /*/\/\/\ End Borders /\/\/\*/
 

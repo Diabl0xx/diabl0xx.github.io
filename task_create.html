@@ -13,15 +13,16 @@
 	<div class="content main-side-border">
 
 		<div class="element-feedback element-border">
-			<img src="./img/attention-green.png" class="imgs-feedback picture-border" alt="">
-			<span class="about-feedback about-border">Форма создания заявки. Заполните все поля и нажмите отправить</span>
+			<img src="./img/attention-pink.png" class="imgs-feedback picture-border" alt="">
+			<span class="about-feedback about-border">Форма создания заявки. Заполните все поля и нажмите "Создать"</span>
 		</div>
 
 		<div class="task_create_form" id="task_create_form">
-			<button class="send" id="create_task"/>Отправить</button>
+			<div class="red-text" id="error_msg"></div>
+			<button class="send" id="create_task"/>Создать</button>
 			<input type="text" class="field have-left-content" placeholder="Тема задачи" id="task_topic"/>
 			<textarea placeholder="Постановка задачи" id="task_text"></textarea>
-			<div class="red-text" id="error_msg"></div>
+
 		</div>
 
 	</div>
