@@ -12,7 +12,7 @@ body {
 	
 }
 .content { flex-grow: 1; 
-	background: url(img/background-pink-half-transparency.png);
+	/*background: url(img/background-pink-half-transparency.png);*/
 } /*Для прижатия футера*/
 
 header, footer { background-color: #6587e8; }
@@ -74,7 +74,7 @@ a:hover { color: #ff994f; }
 
 .task_create_form button.send {
 	float:left;
-	height: 25px;
+	height: 35px;
 	width: 100px;
 	background-color: #6a8ef6;
 	color: #ffffff;
@@ -90,7 +90,7 @@ a:hover { color: #ff994f; }
 .task_create_form button.send:hover {	background-color: #6587e8;}
 
 .task_create_form input.field {
-	height: 25px;
+	height: 35px;
 	float:left;
 	clear:right;
 	box-sizing: border-box;
